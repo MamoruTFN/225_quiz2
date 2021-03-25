@@ -5,15 +5,17 @@ int main()
     int n,count=0,i,m,c=0;
     scanf("%d",&n);
     m=n;
-    for(i=2; i<=n; i++)
+    for(i=1; i<=n; i++)
     {
         for(int j=0; j<3; j++)
         {
-            if(m%i==0)
-            {
-                m/=i;
-                count++;
-            }
+                if(m%i==0)
+                {
+                    m/=i;
+                    count++;
+                }
+
+
 
         }
         if(count==3&&m==1)
@@ -25,6 +27,7 @@ int main()
             count=0;
             m=n;
             c++;
+
         }
     }
 
