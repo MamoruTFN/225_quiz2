@@ -6,7 +6,7 @@ int main()
     scanf("%d",&n);
     m=n;
 
-    for(i=1;i<n;i++)
+    for(i=1;i<=n;i++)
     {
         for(j=0;m>=1;j++)
         {
@@ -29,6 +29,7 @@ int main()
             c=0;
         }
     }
+    printf("%d",count);
 
     return 0;
 }
