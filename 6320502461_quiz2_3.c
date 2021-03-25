@@ -2,20 +2,20 @@
 
 int main()
 {
-    int n,p[1000000],m,j,i,c=0,count=0;
+    int n,p[10],m,j,i,c=0,count=0,k;
     scanf("%d",&n);
-    m=n;
 
     for(i=1;i<=n;i++)
     {
-        for(j=0;m>=1;j++)
+        m=i;
+        for(j=0;m>0;j++)
         {
             p[j]=m%10;
             m/=10;
         }
-        for(int k=0,z=j-1;k<j-1;k++,z--)
+        for(k=0;k<j-1;k++,j--)
         {
-            if(p[k]!=p[z])
+            if(p[k]!=p[j])
             {
                 c=1;
             }
