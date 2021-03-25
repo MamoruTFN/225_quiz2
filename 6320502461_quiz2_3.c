@@ -2,7 +2,7 @@
 
 int main()
 {
-    int n,p[10],m,j,i,c=0,count=0,k;
+    int n,p[10],m,j,i,c=0,count=0,k,z;
     scanf("%d",&n);
 
     for(i=1;i<=n;i++)
@@ -13,9 +13,9 @@ int main()
             p[j]=m%10;
             m/=10;
         }
-        for(k=0;k<j-1;k++,j--)
+        for(k=0,z=j-1;k<j-1;k++,z--)
         {
-            if(p[k]!=p[j])
+            if(p[k]!=p[z])
             {
                 c=1;
             }
